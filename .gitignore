@@ -1,0 +1,17 @@
+# compiled
+*.o
+*.out
+*.exe
+
+# python
+__pycache__/
+*.pyc
+
+# ruby
+*.gem
+.bundle/
+
+# editor
+.vscode/
+.idea/
+*.swp
