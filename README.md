@@ -3,5 +3,5 @@
 My AtCoder solutions and templates.
 
 ## Structure
-- `contests/abc###/A/solution.cpp` — solutions by contest/problem
+- `contests/ABC/ABC###/A/solution.rb` — solutions by contest/problem
 - `templates/` — language templates
