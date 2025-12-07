@@ -1,0 +1,109 @@
+l = 1, r = 1
+sum = 8
+"is = false"
+l = 1, r = 2
+sum = 14
+"is = true"
+l = 1, r = 3
+sum = 24
+"is = false"
+l = 1, r = 4
+sum = 29
+"is = true"
+l = 1, r = 5
+sum = 36
+"is = false"
+l = 1, r = 6
+sum = 38
+"is = false"
+l = 1, r = 7
+sum = 41
+"is = true"
+l = 1, r = 8
+sum = 52
+"is = false"
+l = 2, r = 2
+sum = 6
+"is = false"
+l = 2, r = 3
+sum = 16
+"is = true"
+l = 2, r = 4
+sum = 21
+"is = true"
+l = 2, r = 5
+sum = 28
+"is = false"
+l = 2, r = 6
+sum = 30
+"is = false"
+l = 2, r = 7
+sum = 33
+"is = false"
+l = 2, r = 8
+sum = 44
+"is = false"
+l = 3, r = 3
+sum = 10
+"is = false"
+l = 3, r = 4
+sum = 15
+"is = false"
+l = 3, r = 5
+sum = 22
+"is = true"
+l = 3, r = 6
+sum = 24
+"is = false"
+l = 3, r = 7
+sum = 27
+"is = false"
+l = 3, r = 8
+sum = 38
+"is = false"
+l = 4, r = 4
+sum = 5
+"is = false"
+l = 4, r = 5
+sum = 12
+"is = true"
+l = 4, r = 6
+sum = 14
+"is = false"
+l = 4, r = 7
+sum = 17
+"is = true"
+l = 4, r = 8
+sum = 28
+"is = false"
+l = 5, r = 5
+sum = 7
+"is = false"
+l = 5, r = 6
+sum = 9
+"is = true"
+l = 5, r = 7
+sum = 12
+"is = false"
+l = 5, r = 8
+sum = 23
+"is = true"
+l = 6, r = 6
+sum = 2
+"is = false"
+l = 6, r = 7
+sum = 5
+"is = true"
+l = 6, r = 8
+sum = 16
+"is = false"
+l = 7, r = 7
+sum = 3
+"is = false"
+l = 7, r = 8
+sum = 14
+"is = true"
+l = 8, r = 8
+sum = 11
+"is = false"
+12
