@@ -21,14 +21,3 @@ inputNA = inputNumArray
 inputNG = inputNumGrid
 inputG = inputGrid
 
-Q = inputN()
-N,M = inputMN()
-A = inputNA()
-a = inputNG(N)
-b = inputG(N)
-
-print(Q)
-print(N,M)
-print(A)
-print(a)
-print(b)
