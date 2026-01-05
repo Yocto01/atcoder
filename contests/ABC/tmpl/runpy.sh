@@ -17,7 +17,7 @@ fi
 
 # --- a -log：Log.txt のみに出力 ---
 if [ "$2" = "-log" ]; then
-  python3 "$1/solution.rb" < $1/input.txt > $1/input.txt
+  python3 "$1/solution.py" < $1/input.txt > $1/input.txt
   exit 0
 fi
 

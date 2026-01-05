@@ -1,3 +1,5 @@
+import math
+
 def inputNum():
     return int(input())
 def inputMultiNum():

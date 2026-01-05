@@ -21,3 +21,12 @@ inputNA = inputNumArray
 inputNG = inputNumGrid
 inputG = inputGrid
 
+N = inputN()
+dct = {}
+for i in range(N):
+    s = input()
+    if s in dct:
+        pass
+    else:
+        dct[s] = 1
+        print(i+1)

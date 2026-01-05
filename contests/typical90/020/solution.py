@@ -21,3 +21,8 @@ inputNA = inputNumArray
 inputNG = inputNumGrid
 inputG = inputGrid
 
+a,b,c = inputMN()
+if a < c ** b:
+    print("Yes")
+else:
+    print("No")

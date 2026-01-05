@@ -1,3 +1,4 @@
+import math
 def inputNum():
     return int(input())
 def inputMultiNum():
@@ -21,3 +22,7 @@ inputNA = inputNumArray
 inputNG = inputNumGrid
 inputG = inputGrid
 
+A,B,C = inputMN()
+gcd = math.gcd(math.gcd(A,B),C)
+res = A // gcd + B // gcd + C // gcd - 3
+print(res)

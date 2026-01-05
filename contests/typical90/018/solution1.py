@@ -31,9 +31,16 @@ def calcpos(l,t,e):
 def calcarg(ex,ey,ez,tx,ty,tz):
     ax = tx-ex 
     ay = ty-ey 
-    az = tz-ez
-    tan = az/math.sqrt(ax**2+ay**2)
-    return math.atan(-tan)
+    az = 0 
+    bx = ax 
+    by = ay 
+    bz = tz-ez 
+    cos = (ax*bx+ay*by+az*bz)/(math.sqrt(ax**2+ay**2+az**2)*math.sqrt(bx**2+by**2+bz**2))
+    if cos >= 1:
+        cos = 1
+    elif cos <= -1:
+        cos = -1
+    return math.acos(cos)
 
 T = inputN()
 L,X,Y = inputMN()
