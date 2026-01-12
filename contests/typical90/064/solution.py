@@ -28,14 +28,30 @@ inputNA = inputNumArray
 inputNG = inputNumGrid
 inputG = inputGrid
 
-Q = inputN()
-N,M = inputMN()
+N,Q = inputMN()
 A = inputNA()
-a = inputNG(N)
-b = inputG(N)
+LRV = inputNG(Q)
 
-print(Q)
-print(N,M)
-print(A)
-print(a)
-print(b)
+val = 0
+a = []
+for i in range(N-1):
+    a.append(A[i+1] - A[i])
+
+def sum(a):
+    res = 0
+    for n in a:
+        res += abs(n)
+    return res
+
+res = sum(a)
+for l,r,v in LRV:
+    if l > 1:
+        tmp = a[l-2]
+        a[l-2] += v
+        res += abs(a[l-2]) - abs(tmp)
+    if r < N:
+        tmp = a[r-1]
+        a[r-1] -= v
+        res += abs(a[r-1]) - abs(tmp)
+    #print(a)
+    print(res)

@@ -28,14 +28,23 @@ inputNA = inputNumArray
 inputNG = inputNumGrid
 inputG = inputGrid
 
-Q = inputN()
-N,M = inputMN()
-A = inputNA()
-a = inputNG(N)
-b = inputG(N)
+N,K = inputMN()
+N = str(N)
 
-print(Q)
-print(N,M)
-print(A)
-print(a)
-print(b)
+def base10to9(n):
+    res = ''
+    if n == 0:
+        return '0'
+    while n != 0:
+        res += str(n % 9)
+        n //= 9
+    
+    return res[::-1]
+
+for i in range(K):
+    #print(int(N,8))
+    N = base10to9(int(N,8))
+    #print(N)
+    N = N.replace('8','5')
+    #print(N)
+print(N)

@@ -29,13 +29,18 @@ inputNG = inputNumGrid
 inputG = inputGrid
 
 Q = inputN()
-N,M = inputMN()
-A = inputNA()
-a = inputNG(N)
-b = inputG(N)
+TX = inputNG(Q)
 
-print(Q)
-print(N,M)
-print(A)
-print(a)
-print(b)
+a = [0] * (2 * (10**5) + 100)
+right = 10**5 + 50
+left = 10**5 + 49
+
+for t,x in TX:
+    if t == 1:
+        a[right] = x
+        right += 1
+    elif t == 2:
+        a[left] = x
+        left -= 1
+    else:
+        print(a[right-x])

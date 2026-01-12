@@ -28,14 +28,12 @@ inputNA = inputNumArray
 inputNG = inputNumGrid
 inputG = inputGrid
 
-Q = inputN()
-N,M = inputMN()
-A = inputNA()
-a = inputNG(N)
-b = inputG(N)
+N,K = inputMN()
+mod = 10**9 + 7
 
-print(Q)
-print(N,M)
-print(A)
-print(a)
-print(b)
+if N == 1:
+    print(K)
+elif N == 2:
+    print(K * (K-1))
+else:
+    print((K * (K-1) * pow(K-2,N-2,mod)) % mod)   
