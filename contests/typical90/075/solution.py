@@ -28,5 +28,24 @@ inputNA = inputNumArray
 inputNG = inputNumGrid
 inputG = inputGrid
 
+N = inputN()
 
-    
+def nfact(n):
+    res = 0
+    while n % 2 == 0:
+        res += 1
+        n //= 2
+    m = n
+    for b in range(3,math.floor(m**0.5)+1,2):
+        if n%b == 0:
+            while n%b == 0:
+                res += 1
+                n //= b
+    if n != 1:
+        res += 1
+    return res
+
+
+a = nfact(N)
+print((a-1).bit_length())
+
