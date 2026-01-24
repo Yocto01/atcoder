@@ -28,3 +28,6 @@ inputMN = inputMultiNum
 inputNA = inputNumArray
 inputNG = inputNumGrid
 inputG = inputGrid
+
+N = inputN()
+AB = inputNG(N-1)
