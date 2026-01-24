@@ -28,3 +28,13 @@ inputMN = inputMultiNum
 inputNA = inputNumArray
 inputNG = inputNumGrid
 inputG = inputGrid
+
+S = input()
+
+cnt = 0
+for c in S:
+    if c == 'i':
+        cnt += 1
+    if c == 'j':
+        cnt += 1
+print(cnt)

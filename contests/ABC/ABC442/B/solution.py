@@ -28,3 +28,21 @@ inputMN = inputMultiNum
 inputNA = inputNumArray
 inputNG = inputNumGrid
 inputG = inputGrid
+
+val = 0
+sound = False
+
+Q = inputN()
+
+for i in range(Q):
+    a = inputN()
+    if a == 1:
+        val += 1
+    if a == 2:
+        val = max(0,val-1)
+    if a == 3:
+        sound = not sound
+    if val >= 3 and sound:
+        print("Yes")
+    else:
+        print("No")
